@@ -33,12 +33,12 @@ class GameScene extends Phaser.Scene{
   }
 
   preload(){
-    this.load.image("bg", "/assets/bg.png");
-    this.load.image("basket", "/assets/basket.png");
-    this.load.image("apple", "/assets/apple.png");
-    this.load.audio("coin", "/assets/coin.mp3");
-    this.load.audio("bgMusic", "/assets/bgMusic.mp3");
-    this.load.image("money", "/assets/money.png")
+    this.load.image("bg", "./assets/bg.png");
+    this.load.image("basket", "./assets/basket.png");
+    this.load.image("apple", "./assets/apple.png");
+    this.load.audio("coin", "./assets/coin.mp3");
+    this.load.audio("bgMusic", "./assets/bgMusic.mp3");
+    this.load.image("money", "./assets/money.png")
   }
 
   create(){
@@ -132,7 +132,7 @@ class GameScene extends Phaser.Scene{
 
     } else{
       gameEndScoreSpan.textContent = this.points
-      gameWinLoseSpan.textContent = "It's a lose !"
+      gameWinLoseSpan.textContent = "You lose !"
     }
     gameEndDiv.style.display="flex"
   } 
